@@ -454,6 +454,31 @@ legend + * {
   -webkit-appearance: button;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+  background: transparent;
+  transition: .5s;
+}
+/* ::-webkit-scrollbar:hover {
+  width: 13px;
+  background: transparent;
+} */
+::-webkit-scrollbar-thumb {
+  background: #f95c1986;
+  border-radius: 10px;
+  transition: .5s;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #f95c19bd;
+  border-radius: 10px;
+  transition: .5s;
+}
+::-webkit-scrollbar-corner {
+  border-radius: 10px;
+  background: #F95C19;
+  transition: .5s;
+}
+
 output {
   display: inline-block;
 }
@@ -9520,7 +9545,7 @@ fieldset:disabled .btn {
 }
 
 .text-danger {
-  color: #F95C19 !important;
+  color: #de544d !important;
 }
 
 .text-light {
