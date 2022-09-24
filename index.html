@@ -268,14 +268,14 @@
               <p class="text-muted">Monday to Saturday, 9am-5pm.</p>
             </div>
             <div class="col-md-6 col-lg-5 col-xl-4">
-              <form class="row">
+              <form id="gform" autocomplete="off" name="google-sheet" action="" method="POST" role="form" class="row">
                 <div class="mb-3">
                   <label class="form-label visually-hidden" for="inputName">Name</label>
                   <input class="form-control form-quriar-control" id="inputName" type="text" placeholder="Name" />
                 </div>
                 <div class="mb-3">
                   <label class="form-label visually-hidden" for="inputEmail">Email</label>
-                  <input class="form-control form-quriar-control" id="inputEmail" type="email" placeholder="Email" />
+                  <input required class="form-control form-quriar-control" id="inputEmail" type="email" placeholder="Email" />
                 </div>
                 <div class="mb-5">
                   <label class="form-label visually-hidden" for="validationTextarea">Message</label>
@@ -426,7 +426,32 @@
     <script src="vendors/fontawesome/all.min.js"></script>
     <script src="assets/js/theme.js"></script>
 
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbxX6GZNWc6fARDVyJ_V-J5OrQPQDXXAD8wcl-RURUlhzNo4Ppm_Qfp193vP-o3xihfT/exec'
+      const form = document.forms['google-sheet']
+    
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response =>(swal({
+                            title: "Thank You",
+                            text: "We will Contact You Later",
+                            icon: "success",
+          })))
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
+
+    <!-- scripts -->
+
+    <script data-cfasync="false" type="text/javascript"
+src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>   
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   </body>
 
 </html>
