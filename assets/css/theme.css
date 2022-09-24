@@ -218,12 +218,14 @@ sup {
 }
 
 a {
-  color: #EBEBF5;
+  color: #4b4b4b;
   text-decoration: none;
+  transition: .5s;
 }
 
 a:hover {
   color: #F95C19;
+  transition: .5s;
   text-decoration: underline;
 }
 
@@ -990,7 +992,9 @@ progress {
 .gx-8 {
   --bs-gutter-x: 7.5rem;
 }
-
+.bg-900 {
+  background-color: #2e2e2e !important;
+}
 .g-8,
 .gy-8 {
   --bs-gutter-y: 7.5rem;
@@ -9641,12 +9645,8 @@ fieldset:disabled .btn {
   background-color: #464558 !important;
 }
 
-.bg-900 {
-  background-color: #2F2E41 !important;
-}
-
 .bg-1000 {
-  background-color: #222132 !important;
+  background-color: #1e0408 !important;
 }
 
 .bg-white {
