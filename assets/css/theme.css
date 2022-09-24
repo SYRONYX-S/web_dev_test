@@ -461,20 +461,16 @@ legend + * {
 
 ::-webkit-scrollbar {
   width: 10px;
-  background: transparent;
+  background: #f95c193a;
   transition: .5s;
 }
-/* ::-webkit-scrollbar:hover {
-  width: 13px;
-  background: transparent;
-} */
 ::-webkit-scrollbar-thumb {
   background: #f95c1986;
   border-radius: 10px;
   transition: .5s;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #f95c19bd;
+  background: #F95C19;
   border-radius: 10px;
   transition: .5s;
 }
@@ -3546,8 +3542,8 @@ fieldset:disabled .btn {
 
 .btn-primary {
   color: #FFFEFE;
-  background-color: #F95C19;
-  border-color: #F95C19;
+  background-color: #e73737;
+  border-color: #e73737;
 }
 
 .btn-primary:hover {
@@ -9159,8 +9155,8 @@ fieldset:disabled .btn {
 }
 
 .py-8 {
-  padding-top: 7.5rem !important;
-  padding-bottom: 7.5rem !important;
+  padding-top: 3.5rem !important;
+  padding-bottom: 3.5rem !important;
 }
 
 .py-9 {
@@ -9207,7 +9203,7 @@ fieldset:disabled .btn {
 }
 
 .pt-7 {
-  padding-top: 5rem !important;
+  padding-top: 0rem !important;
 }
 
 .pt-8 {
@@ -12674,6 +12670,7 @@ fieldset:disabled .btn {
   }
   .pt-md-0 {
     padding-top: 0 !important;
+    padding-bottom: 9rem;
   }
   .pt-md-1 {
     padding-top: 0.25rem !important;
