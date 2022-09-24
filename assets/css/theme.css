@@ -993,7 +993,8 @@ progress {
   --bs-gutter-x: 7.5rem;
 }
 .bg-900 {
-  background-color: #2e2e2e !important;
+  background: rgba(255, 255, 255, 0.425);
+  border-top: solid 3px #F95C19;
 }
 .g-8,
 .gy-8 {
@@ -9891,7 +9892,7 @@ fieldset:disabled .btn {
 }
 
 .text-500 {
-  color: #9291A1 !important;
+  color: #181718 !important;
 }
 
 .text-600 {
