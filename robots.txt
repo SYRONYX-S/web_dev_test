@@ -1,0 +1,3 @@
+user-agent: *
+Dissallow: /404.html
+Sitemap : https://www.multiverseenterprises.in/sitemap.xml
