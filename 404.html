@@ -1,4 +1,65 @@
+<!--    Favicons-->
+<!-- ===============================================-->
+<link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
+<link rel="shortcut icon" type="image/x-icon" href="assets/img/favicons/favicon_1.ico">
+<!-- <link href="assets/img/favicon.png" rel="apple-touch-icon" /> -->
+<link rel="manifest" href="assets/img/favicons/manifest.json">
+<meta name="msapplication-TileImage" content="assets/img/favicons/mstile-150x150.png">
+<meta name="theme-color" content="#ffffff">
+
+<title class="error-page-title">404 - Multiverse Enterprises</title>
 <head>
-    <title>404</title>
-    <h1>Page not found . Back to<a href="https://www.multiverseenterprises.in"> Home</a></h1>
+    <body oncontextmenu="return false" style="min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;">
+        <h1 class="error-page-h1" style="text-align: center;font-size: 45px;color:rgb(66, 66, 66);">404 Error <br> Page not found . Back to <a title="Go to Multiverse Enterprises home page" href="https://www.multiverseenterprises.in" style="color: rgba(0, 174, 255, 0.808);"> Home</a></h1>
+        <style>
+            ::-webkit-scrollbar {
+                width: 10px;
+                background: #f95c193a;
+                transition: .5s;
+              }
+              ::-webkit-scrollbar-thumb {
+                background: #f95c1986;
+                border-radius: 10px;
+                transition: .5s;
+              }
+              ::-webkit-scrollbar-thumb:hover {
+                background: #F95C19;
+                border-radius: 10px;
+                transition: .5s;
+              }
+              ::-webkit-scrollbar-corner {
+                border-radius: 10px;
+                background: #F95C19;
+                transition: .5s;
+              }
+              body {
+                background: url("assets/img/gallery/bg.png");
+              }
+        </style>
+        <script>
+            document.onkeydown = function(e) {
+                if(event.keyCode == 123) {
+                   return false;
+                }
+                if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+                   return false;
+                }
+                if(e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
+                   return false;
+                }
+                if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+                   return false;
+                }
+                if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+                   return false;
+                }
+              }
+        </script>
+        
+    </body>
 </head>
